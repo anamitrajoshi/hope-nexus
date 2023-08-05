@@ -36,7 +36,9 @@ h1{
 nav {
     background-color: #0097b2; /* Light gray background for navigation */
     padding: 20px;
-    text-align: right; /* Align navigation links to the right */
+    text-align: right; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/* Align navigation links to the right */
+    font-size: 25px;
 }
 
 nav ol {
@@ -95,7 +97,7 @@ footer {
     color: #000000;
     text-align: center;
     padding: 20px;
-    position:fixed; /* Position the footer absolutely */
+    position:sticky; /* Position the footer absolutely */
     bottom: 0; /* Place the footer at the bottom of the page */
     width: 100%; /* Ensure the footer spans the full width */
 }
