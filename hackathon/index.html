@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOPENEXUS</title>
+    <style>
+        .logo-title-container {
+            display: flex; /* Use flexbox to align items horizontally */
+            align-items: center; /* Center items vertically within the container */
+            height: 200px;
+        }
+
+        /* Optional: Style the logo */
+        .hope {
+            width: 200px; /* Adjust the width as per your preference */
+            height: auto; /* This ensures the aspect ratio is maintained */
+            margin-right: 1250px; /* Add spacing between the logo and the title */
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="hope" src="hope.jpg" alt="Logo">
+            <h1>HOPENEXUS</h1>
+            <ol>
+                <li><a href="#about" onclick="toggleAbout()">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="ngologin.html">NGO Login</a></li>
+                <li><a href="login.html">User Login</a></li>
+            </ol>
+
+        </nav>
+
+
+
+        <a href="#learn-more" class="cta-button">Learn More</a>
+    </header>
+    
+    <section id="about" style="display:none;">
+        <h2>About Us</h2>
+        <p>"In many countries, individuals face challenges in education, employment, and basic needs due to poverty, 
+            discrimination, limited opportunities, and inadequate infrastructure. NGOs strive to address these issues, 
+            but there is a pressing need for an accessible platform connecting individuals with the right NGOs and government 
+            organizations to provide tailored assistance. Unfortunately, people lacking resources or facing barriers struggle to 
+            find appropriate support networks. They may not be aware of available NGOs or encounter difficulties accessing them due 
+            to language barriers, limited internet connectivity, or lack of knowledge. As a result, their problems persist. To 
+            bridge this gap, a user-friendly and inclusive platform is crucial. It would serve as a centralized hub of information, 
+            resources, and services, making it easier for individuals to navigate and access the assistance they require. This 
+            platform plays a vital role in empowering marginalized communities and meeting their needs. 
+            Additionally, it should facilitate connections beyond NGOs, linking people to the broader world."</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>"Through our app, we provide a comprehensive solution to individuals in need by facilitating direct 
+        connections with NGOs and government organizations. Users can access a list of NGOs specializing 
+        in various areas such as job support, child welfare, healthcare, and women's safety.
+        They can filter and select the most relevant NGOs based on their specific requirements. 
+        Additionally, users can report cases of child labor by taking pictures through the app.
+        NGOs promptly respond to these reports, intervening to rescue the children and provide them with access to education. 
+        By leveraging technology, our app streamlines the process of seeking help, ensuring timely intervention and tailored 
+        assistance for individuals, supporting and promoting education for vulnerable children."</p>
+    </section>
+    
+
+    
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAbout() {
+            var aboutSection = document.getElementById('about');
+            if (aboutSection.style.display === 'none') {
+                aboutSection.style.display = 'block';
+            } else {
+                aboutSection.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* Reset default margin and padding */
+@font-face {
+    font-family: 'dum1.ttf'; /* Name of your custom font */
+    src: url('dum1.ttf') format('rrf'), 
+
+  }
+body, h1, h2, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: floralwhite;
+    color: rgb(2, 18, 23); /* Dark text color */
+}
+
+header {
+    background-image: url('path/to/your/image.jpg'); /* Replace with the actual image path */
+    background-size: cover; /* Adjust the image size to cover the element */
+    background-position: center; /* Position the image in the center */
+    color: rgb(255, 255, 255);
+    text-align: left; /* Align the text to the left */
+    padding: 20px;
+    position: static; /* Add position relative to position the H1 absolutely */
+}
+h1{
+    color: white;
+    font-family: 'dum1.tff';
+    margin-right: 700px;
+    margin-top: -120px;
+    font-size: 75px;
+}
+
+
+nav {
+    background-color: #0097b2; /* Light gray background for navigation */
+    padding: 20px;
+    text-align: right; /* Align navigation links to the right */
+}
+
+nav ol {
+    list-style-type: none; /* Remove default bullet points */
+}
+
+nav li {
+    display: inline; /* Display navigation links inline */
+    margin-top: px;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White text color for navigation links */
+}
+
+nav a:hover {
+    color: #000000; /* Blue color on hover */
+}
+
+section {
+    padding: 50px;
+}
+
+#about {
+    font-size: larger;
+    font-family: 'dum1.ttf', 'sans-serif';
+    background-color: floralwhite;
+}
+
+#services {
+    font-size: larger;
+    font-family: 'dum1.ttf', 'sans-serif';
+    background-color: floralwhite; 
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0097b2;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-right: 20px; 
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #000000; /* Darker blue color on hover */
+}
+
+footer {
+    background-color: #0097b2; /* Dark background for the footer */
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    position:fixed; /* Position the footer absolutely */
+    bottom: 0; /* Place the footer at the bottom of the page */
+    width: 100%; /* Ensure the footer spans the full width */
+}
+
+.social-icons a {
+    margin: 0 5px;
+}
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
