@@ -11,8 +11,11 @@ body, h1, h2, p, ul, ol, li {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: floralwhite;
-    color: rgb(2, 18, 23); /* Dark text color */
+    background-image: url(mainbg.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: floralwhite; /* Dark text color */
 }
 
 header {
@@ -22,7 +25,7 @@ header {
     color: rgb(255, 255, 255);
     text-align: left; /* Align the text to the left */
     padding: 20px;
-    position: static; /* Add position relative to position the H1 absolutely */
+    position:static; /* Add position relative to position the H1 absolutely */
 }
 h1{
     color: white;
@@ -57,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #000000; /* Blue color on hover */
+    color: darkgrey; /* Blue color on hover */
 }
 
 section {
@@ -67,13 +70,18 @@ section {
 #about {
     font-size: larger;
     font-family: 'dum1.ttf', 'sans-serif';
-    background-color: floralwhite;
+
 }
 
 #services {
     font-size: larger;
     font-family: 'dum1.ttf', 'sans-serif';
-    background-color: floralwhite; 
+    
+}
+
+#contact {
+    font-size: larger;
+    font-family: 'dum1.ttf', 'sans-serif';
 }
 
 
@@ -89,7 +97,7 @@ section {
 }
 
 .cta-button:hover {
-    background-color: #000000; /* Darker blue color on hover */
+    background-color: darkgrey; /* Darker blue color on hover */
 }
 
 footer {
