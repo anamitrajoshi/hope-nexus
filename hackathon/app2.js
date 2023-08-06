@@ -33,19 +33,19 @@ function searchPeople() {
     }
 }
 
-// Add error handling
+
 try {
     searchPeople();
 } catch (error) {
     console.error(error);
 }
 
-// Add a loading animation
+
 const loadingSpinner = document.createElement("div");
 loadingSpinner.classList.add("loading-spinner");
 searchResults.appendChild(loadingSpinner);
 
-// Add a debounce function to the search input
+
 const debouncedSearch = debounce(searchPeople, 500);
 
 document.getElementById("search-input").addEventListener("keyup", debouncedSearch);

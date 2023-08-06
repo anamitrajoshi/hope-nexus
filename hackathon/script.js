@@ -19,7 +19,7 @@ loginForm.addEventListener('submit', (e) => {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     
-    // Store data in LocalStorage
+    
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
     

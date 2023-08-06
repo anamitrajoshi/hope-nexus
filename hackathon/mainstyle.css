@@ -1,6 +1,6 @@
-/* Reset default margin and padding */
+
 @font-face {
-    font-family: 'dum1.ttf'; /* Name of your custom font */
+    font-family: 'dum1.ttf'; 
     src: url('dum1.ttf') format('rrf'), 
 
   }
@@ -15,17 +15,17 @@ body {
     background-size: cover; 
     background-position: center center;
     background-repeat: no-repeat;
-    color: floralwhite; /* Dark text color */
+    color: floralwhite; 
 }
 
 header {
-    background-image: url('path/to/your/image.jpg'); /* Replace with the actual image path */
-    background-size: cover; /* Adjust the image size to cover the element */
-    background-position: center; /* Position the image in the center */
+    background-image: url('path/to/your/image.jpg'); 
+    background-size: cover; 
+    background-position: center; 
     color: rgb(255, 255, 255);
-    text-align: left; /* Align the text to the left */
+    text-align: left; 
     padding: 20px;
-    position:static; /* Add position relative to position the H1 absolutely */
+    position:static; 
 }
 h1{
     color: white;
@@ -37,30 +37,30 @@ h1{
 
 
 nav {
-    background-color: #0097b2; /* Light gray background for navigation */
+    background-color: #0097b2;
     padding: 20px;
     text-align: right; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/* Align navigation links to the right */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
 }
 
 nav ol {
-    list-style-type: none; /* Remove default bullet points */
+    list-style-type: none; 
 }
 
 nav li {
-    display: inline; /* Display navigation links inline */
+    display: inline; 
     margin-top: px;
     margin-right: 50px;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff; /* White text color for navigation links */
+    color: #fff; 
 }
 
 nav a:hover {
-    color: darkgrey; /* Blue color on hover */
+    color: darkgrey; 
 }
 
 section {
@@ -97,17 +97,17 @@ section {
 }
 
 .cta-button:hover {
-    background-color: darkgrey; /* Darker blue color on hover */
+    background-color: darkgrey; 
 }
 
 footer {
-    background-color: #0097b2; /* Dark background for the footer */
+    background-color: #0097b2; 
     color: #000000;
     text-align: center;
     padding: 15px;
-    position:sticky; /* Position the footer absolutely */
-    bottom: 0; /* Place the footer at the bottom of the page */
-    width: 100%; /* Ensure the footer spans the full width */
+    position:sticky; 
+    bottom: 0; 
+    width: 100%; 
 }
 
 .social-icons a {
