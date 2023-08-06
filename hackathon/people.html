@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE PLATFORM COUNTLESS IMPACTS</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Find NGOs</h1>
+        <nav>
+         
+        </nav>
+    </header>
+
+    <main>
+        <section id="ngos-section">
+            <h2>NGO Details</h2>
+            <div class="ngo">
+                
+                <h3>Helping Hands Foundation</h3>
+                <p>Description: A non-profit organization helping the needy.</p>
+                <p>Address: 8-2-293/82, Plot no 564/A32/2, Road No 92, MLA colony, Jubilee Hills</p>
+                <p>Section working in: Rural Development & Poverty Alleviation, Vocational Training, Women's Development & Empowerment</p>
+            </div>
+            <div class="ngo">
+                <h3>Green Earth Society</h3>
+                <p>Description: An NGO dedicated to environmental conservation.</p>
+                <p>Address: Flat No. 401, The Legend Apartments, 3-4-136,770, Barakatpura</p>
+                <p>Section working in: Environment & Forests, Any Other</p>
+            </div>
+        </section>
+    </main>
+
+ 
+    <section id="search-section">
+        <h2>Search NGOs by Section</h2>
+        <input type="text" id="search-input" placeholder="Enter section">
+        <button onclick="searchNGOs()">Search</button>
+        <div id="search-results">
+           
+        </div>
+    </section>
+
+    <!-- Display NGOs and Details in a Table -->
+    <section id="ngos-table-section">
+        <h2>NGOs and Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Section Working In</th>
+                </tr>
+            </thead>
+            <tbody id="ngos-table-body">
+                
+            </tbody>
+        </table>
+    </section>
+
+    <script>
+       
+        function searchNGOs() {
+            const searchInput = document.getElementById("search-input").value.toLowerCase();
+            const ngosSection = document.getElementById("ngos-section");
+            const ngosList = ngosSection.getElementsByClassName("ngo");
+            const searchResults = document.getElementById("search-results");
+            const ngosTableBody = document.getElementById("ngos-table-body");
+
+            searchResults.innerHTML = "";
+            ngosTableBody.innerHTML = "";
+
+            
+            for (const ngo of ngosList) {
+                const name = ngo.getElementsByTagName("h3")[0].textContent;
+                const sectionWorkingIn = ngo.getElementsByTagName("p")[2].textContent.toLowerCase();
+                if (sectionWorkingIn.includes(searchInput)) {
+                    const row = document.createElement("tr");
+                    const nameCell = document.createElement("td");
+                    const sectionCell = document.createElement("td");
+                    nameCell.textContent = name;
+                    sectionCell.textContent = sectionWorkingIn;
+                    row.appendChild(nameCell);
+                   
+                    row.appendChild(sectionCell);
+                    ngosTableBody.appendChild(row);
+                }
+            }
+
+            if (ngosTableBody.children.length === 0) {
+                const noResultsMessage = document.createElement("tr");
+                const noResultsCell = document.createElement("td");
+                noResultsCell.textContent = "No matching NGOs found.";
+                noResultsCell.colSpan = 2;
+                noResultsMessage.appendChild(noResultsCell);
+                ngosTableBody.appendChild(noResultsMessage);
+            }
+        }
+    </script>
+</body>
+
+</html>

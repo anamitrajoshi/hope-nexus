@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("background2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #6bbbda;
+    color: #ffff;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #070808;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.person, .ngo {
+    margin-bottom: 1rem;
+}
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+#search-input {
+    width: 200px;
+}
+
+#search-results {
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+th {
+    text-align: left;
+}
